@@ -1,0 +1,376 @@
+// INDEX //
+
+.hero {
+    text-align: center;
+    color: $text-color;
+    height: 90vh;
+    background-image: url("../img/hero.png.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    padding: 40px 20px;
+    padding-top: 120px;
+    margin-top: 0;
+    margin-bottom: 0;
+    h2 {
+        font-size: 40px;
+        color: $text-color;
+        padding: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+// PRODUCTOS DESTACADOS //
+
+.productos-destacados {
+    h2 {
+        background-color: $primary-color;
+        color: nth($lista-de-colores,2);
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .contenedor-items-destacados {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        gap: 20px;
+        flex-wrap: wrap;
+        div {
+            @extend %button-base;
+            background-color: transparent;
+            color: $text-color;
+            border: 2px solid nth($lista-de-colores, 1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            flex-basis: calc(25% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            box-shadow: 0.3s ease;
+            max-width: 300px;
+            min-width: 250px;
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px color($lista-de-colores, 2);
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 22px;
+            margin: 15px 0;
+            color: $text-color;
+        }
+        .boton {
+            @extend %button-base;
+            &:hover {
+                background-color: $hover-color;
+                color: $text-color;
+            }
+            }
+        }
+    }
+
+// PRODUCTOS //
+
+.productos {
+
+    h2 {
+        background-color: $primary-color;
+        color: nth($lista-de-colores,2);
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    .contenedor-items {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        gap: 20px;
+        flex-wrap: wrap;
+        div {
+            @extend %button-base;
+            background-color: transparent;
+            color: $text-color;
+            border: 2px solid nth($lista-de-colores, 1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            flex-basis: calc(25% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            box-shadow: 0.3s ease;
+            max-width: 300px;
+            min-width: 250px;
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px color($lista-de-colores, 2);
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 22px;
+            margin: 15px 0;
+            color: $text-color;
+        }
+        .boton {
+            @extend %button-base;
+            &:hover {
+                background-color: $hover-color;
+                color: $text-color;
+            }
+        }
+    }
+}
+
+// WHATSAPP //
+
+.fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    a {
+        img {
+            width: 70px;
+        }
+    }
+}
+
+// PAGINA "PRODUCTOS" //
+
+.productoss {
+    padding: 0;
+    text-align: center;
+    h2 {
+        background-color: $primary-color;
+        color: nth($lista-de-colores,2);
+        margin-top: 0;
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.contenedor-itemss {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.producto {
+    @extend %button-base;
+    background-color: transparent;
+    color: $text-color;
+    font-weight: bold;
+    border: 2px solid nth($lista-de-colores, 1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px color($lista-de-colores, 2);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+}
+h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: $text-color;
+}
+.boton {
+    @extend %button-base;
+    &:hover {
+        background-color: $hover-color;
+        color: $text-color;
+    }
+}
+
+.fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    a {
+        img {
+            width: 70px;
+        }
+    }
+}
+
+// PAGINA "NOSOTROS" //
+
+.nosotros {
+    h2 {
+        background-color: $primary-color;
+        color: nth($lista-de-colores, 2);
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 18px;
+        color: $text-color;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+}
+.valores {
+    h2 {
+        background-color: $primary-color;
+        color: nth($lista-de-colores, 2);
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .row {
+        text-align: center;
+    }
+    h3 {
+        color: $primary-color;
+        margin-bottom: 10px;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    p {
+        font-size: 18px;
+        color: $text-color;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+}
+.timeline {
+    h2 {
+        background-color: $primary-color;
+        color: nth($lista-de-colores, 2);
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .timeline-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .timeline-item {
+        margin-left: 20px;
+        padding: 20px;
+        border-left: 4px solid $primary-color;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        h3 {
+            color: $primary-color;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            color: $text-color;
+        }
+    }
+}
+
+// PAGINA "CONTACTO" //
+
+.contacto {
+    h2 {
+        background-color: $primary-color;
+        color: nth($lista-de-colores, 2);
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+}
+.formulario-contacto {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $primary-color;
+        input, textarea {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid $primary-color;
+            border-radius: 5px;
+            &:focus {
+                outline: none;
+                border-color: red;
+                box-shadow: 0 0 5px red;
+            }
+        }
+        button {
+            @extend %button-base;
+            &:hover {
+                background-color: $hover-color;
+                color: $text-color;
+            }
+    }
+    }
+}
+
+// PAGINA "OPINIONES" //
+
+.testimonials {
+    padding: 0 40px 20px;
+    text-align: center;
+    margin: 0;
+    h2 {
+        background-color: $primary-color;
+        color: nth($lista-de-colores, 2);
+        padding: 20px;
+        text-transform: uppercase;
+        margin: 5px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .blockquote {
+        padding: 20px;
+        border-left: 5px solid $primary-color;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-style: italic;
+        font-size: 1.3rem;
+    }
+    .blockquote-footer {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: $primary-color;
+        font-weight: bold;
+    }
+}

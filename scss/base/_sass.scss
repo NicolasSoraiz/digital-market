@@ -1,0 +1,36 @@
+// VARIABLES //
+
+$primary-color: darkred;
+$text-color: whitesmoke;
+$hover-color: red;
+
+// MIXINS //
+
+@mixin button-styles($primary-color) {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+//EXTENDS //
+
+%button-base {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    }
+
+// LISTAS //
+
+$lista-de-colores: red, black, white, darkred;

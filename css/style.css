@@ -28,28 +28,20 @@ header {
     overflow: hidden;
 }
 
+header nav {
+    background-color: black;
+}
+
+header nav div, header nav ul {
+    background-color: black;
+}
+
 header a h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-}
-
-header nav ul li {
-    display: flex;
-    margin: 0 10px;
-}
-
-header a {
     color: darkred;
     text-decoration: none;
-}
-
-h1 {
-    color: darkred;
-}
-
-h2 {
-    color: darkred;
 }
 
 header nav ul {
@@ -58,60 +50,34 @@ header nav ul {
     gap: 20px;
 }
 
-header nav .navbar-nav .nav-link {
-    word-spacing: -5px;
+header nav ul li {
+    display: flex;
+    margin: 0 10px;
 }
 
-header nav .navbar-brand {
-    letter-spacing: -2px;
-}
-
-.container-fluid {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-/*? ---- ESTILO DEL MENU ---- */
-
-nav a {
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
+header nav ul li a {
     font-size: 18px;
+    color: darkred;
+    text-decoration: none;
 }
 
-/*? ---- FONDO DEL HEADER ---- */
-
-header nav div {
-    background-color: black;
+header nav ul li a:hover {
+    color: red;
 }
+
+/*! ---- NAVBAR ---- */
 
 .navbar {
-    margin: 0%;
-    padding: 0%;
-}
-
-.navbar-espand-lg {
     width: 100%;
-}
-
-/*? ---- COLOR "DIGITAL MARKET" ---- */
-
-.container-fluid .navbar-brand {
-    color: darkred;
-    font-size: 30px;
-    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
 
 .navbar-toggler {
     margin-left: auto;
     padding: 10px;
 }
-
-/*? ---- COLOR "INICIO PRODUCTOS SERVICIOS NOSOTROS" ---- */
 
 .navbar-nav .nav-link {
     color: darkred;
@@ -123,15 +89,22 @@ header nav div {
     color: red;
 }
 
-/*? ---- COLOR "BUSCADOR" ---- */
+/*! ---- BRAND "DIGITAL MARKET" ---- */
+
+.container-fluid .navbar-brand {
+    color: darkred;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+/*! ---- FORM Y SEACH BUTON ---- */
 
 .form-control {
     background-color: black;
     color: darkred;
     border: 1px solid darkred;
 }
-
-/*? ---- COLOR "ICONO DE BUSCAR ---- */
 
 .btn-outline-success {
     background-color: darkred;
@@ -144,6 +117,15 @@ header nav div {
     border-color: red;
     color: black;
 }
+
+/*! ---- CONTAINER ---- */
+
+.container-fluid {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/*! ---- FLEX UTILY CLASS ---- */
 
 .d-flex {
     display: flex;

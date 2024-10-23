@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    background-color: nth($lista-de-colores, 2) !important;
+    padding: 15px;
+    position: static;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    nav {
+        background-color: nth($lista-de-colores,2) !important;
+        div ul {
+            background-color: nth($lista-de-colores,2) !important;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            li {
+                display: flex;
+                margin: 0 10px;
+                a {
+                    font-size: 18px;
+                    color: $primary-color;
+                    text-decoration: none;
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+    a h1 {
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: nth($lista-de-colores,2) !important;
+
+    .navbar-toggler {
+        margin-left: auto;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: $primary-color;
+            font-size: 17px;
+            margin-right: 10px;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+}
+
+.container-fluid {
+    .navbar-brand {
+        color: $primary-color;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: -2px;
+    }
+
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.form-control {
+    background-color: nth($lista-de-colores,2);
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    &:focus {
+        outline: none;
+        border: 2px solid $hover-color;
+        box-shadow: 0 0 5px $hover-color;
+    }
+}
+
+.btn-outline-success {
+    background-color: $primary-color;
+    color: nth($lista-de-colores,2);
+    border-color: $primary-color;
+    &:hover {
+        background-color: $hover-color;
+        border-color: $hover-color;
+        color: nth($lista-de-colores,2);
+    }
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
