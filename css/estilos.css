@@ -20,7 +20,7 @@ ul {
   list-style: none; }
 
 header {
-  background-color: black !important;
+  background-color: black;
   padding: 15px;
   position: static;
   top: 0;
@@ -32,9 +32,9 @@ header {
   box-sizing: border-box;
   overflow: hidden; }
   header nav {
-    background-color: black !important; }
+    background-color: black; }
     header nav div ul {
-      background-color: black !important; }
+      background-color: black; }
     header nav ul {
       list-style: none;
       display: flex;
@@ -84,6 +84,7 @@ header {
   color: darkred;
   border: 1px solid darkred; }
   .form-control:focus {
+    background-color: black;
     outline: none;
     border: 2px solid red;
     box-shadow: 0 0 5px red; }
@@ -120,6 +121,9 @@ header {
     padding: 20px; }
   .hero p {
     font-size: 20px; }
+
+body {
+  background-color: black; }
 
 .productos-destacados h2 {
   background-color: darkred;
@@ -195,7 +199,7 @@ header {
     min-width: 250px; }
     .productos .contenedor-items div:hover {
       transform: scale(1.05);
-      box-shadow: 0 8px 16px color(red, black, white, darkred, 2); }
+      box-shadow: 0 8px 16px color(red, black, white, darkred, 2) !important; }
   .productos .contenedor-items img {
     max-width: 100%;
     height: auto;
@@ -394,8 +398,8 @@ h3 {
     font-weight: bold; }
 
 footer {
-  background-color: black;
-  color: darkred;
+  background-color: darkred;
+  color: white;
   padding: 20px 0;
   margin-top: 5%; }
 
@@ -410,7 +414,8 @@ footer {
   padding: 10px; }
   .footer-section h5 {
     margin-bottom: 15px;
-    color: darkred; }
+    color: black;
+    font-weight: bold; }
 
 .social {
   display: flex;
@@ -426,8 +431,9 @@ footer {
 .footer-bottom {
   text-align: center;
   padding: 10px 0;
-  background-color: black;
-  color: darkred; }
+  background-color: darkred;
+  color: black;
+  font-weight: bold; }
 
 @media screen and (min-width: 360px) and (max-width: 1200px) {
   .navbar {

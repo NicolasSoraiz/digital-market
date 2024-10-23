@@ -1,6 +1,6 @@
 footer {
-    background-color: nth($lista-de-colores,2);
-    color: $primary-color;
+    background-color: $primary-color;
+    color: white;
     padding: 20px 0;
     margin-top: 5%;
 }
@@ -15,7 +15,8 @@ footer {
     padding: 10px;
     h5 {
         margin-bottom: 15px;
-        color: $primary-color;
+        color: nth($lista-de-colores,2);
+        font-weight: bold;
     }
 }
 .social {
@@ -33,6 +34,7 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 10px 0;
-    background-color: nth($lista-de-colores,2);
-    color: $primary-color;
+    background-color: $primary-color;
+    color: nth($lista-de-colores,2);
+    font-weight: bold;
 }
