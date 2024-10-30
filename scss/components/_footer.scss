@@ -1,8 +1,9 @@
 footer {
-    background-color: $primary-color;
-    color: white;
-    padding: 20px 0;
-    margin-top: 5%;
+    background-color: black; 
+    color: $text-color;
+    text-align: center;
+    padding:  20px;
+    margin-top: auto;
 }
 .footer-container {
     display: flex;
@@ -15,7 +16,7 @@ footer {
     padding: 10px;
     h5 {
         margin-bottom: 15px;
-        color: nth($lista-de-colores,2);
+        color: nth($lista-de-colores,3);
         font-weight: bold;
     }
 }
@@ -34,7 +35,7 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 10px 0;
-    background-color: $primary-color;
-    color: nth($lista-de-colores,2);
+    background-color: black;
+    color: nth($lista-de-colores,3);
     font-weight: bold;
 }

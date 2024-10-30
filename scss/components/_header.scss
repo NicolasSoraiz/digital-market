@@ -13,7 +13,7 @@ ul {
 }
 
 header {
-    background-color: nth($lista-de-colores, 2);
+    background-color: $secundary-color;
     padding: 15px;
     position: static;
     top: 0;
@@ -25,9 +25,9 @@ header {
     box-sizing: border-box;
     overflow: hidden;
     nav {
-        background-color: nth($lista-de-colores,2);
+        background-color: nth($lista-de-colores,1);
         div ul {
-            background-color: nth($lista-de-colores,2);
+            background-color: $secundary-color;
         }
         ul {
             list-style: none;
@@ -60,7 +60,7 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: nth($lista-de-colores,2) !important;
+    background-color: transparent !important;
 
     .navbar-toggler {
         margin-left: auto;
@@ -92,11 +92,11 @@ header {
 }
 
 .form-control {
-    background-color: nth($lista-de-colores,2);
+    background-color: $secundary-color;
     color: $primary-color;
     border: 1px solid $primary-color;
     &:focus {
-        background-color: nth($lista-de-colores,2);
+        background-color: $secundary-color;
         outline: none;
         border: 2px solid $hover-color;
         box-shadow: 0 0 5px $hover-color;
@@ -105,12 +105,12 @@ header {
 
 .btn-outline-success {
     background-color: $primary-color;
-    color: nth($lista-de-colores,2);
+    color: nth($lista-de-colores,1);
     border-color: $primary-color;
     &:hover {
         background-color: $hover-color;
         border-color: $hover-color;
-        color: nth($lista-de-colores,2);
+        color: nth($lista-de-colores,1);
     }
 }
 

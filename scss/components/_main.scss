@@ -14,6 +14,7 @@
     margin-top: 0;
     margin-bottom: 0;
     h2 {
+        background-color: transparent;
         font-size: 40px;
         color: $text-color;
         padding: 20px;
@@ -25,14 +26,16 @@
 
 // PRODUCTOS DESTACADOS //
 
-
 body {
-    background-color: nth($lista-de-colores,2);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(15, 18, 19);
 }
 .productos-destacados {
     h2 {
-        background-color: $primary-color;
-        color: nth($lista-de-colores,2);
+        background-color: $primary-color ;
+        color: nth($lista-de-colores,1) ;
         padding: 20px;
         text-align: center;
         text-transform: uppercase;
@@ -47,9 +50,9 @@ body {
         flex-wrap: wrap;
         div {
             @extend %button-base;
-            background-color: transparent;
-            color: $text-color;
-            border: 2px solid nth($lista-de-colores,1);
+            background-color: transparent !important;
+            color: $text-color ;
+            border: 2px solid nth($lista-de-colores,3) !important;
             border-radius: 10px;
             padding: 20px;
             text-align: center;
@@ -61,7 +64,7 @@ body {
             min-width: 250px;
             &:hover {
                 transform: scale(1.05);
-                box-shadow: 0 8px 16px color($lista-de-colores, 2);
+                box-shadow: 0 8px 16px color $secundary-color;
             }
         }
         img {
@@ -72,7 +75,7 @@ body {
         h3 {
             font-size: 22px;
             margin: 15px 0;
-            color: $text-color;
+            color: $text-color !important;
         }
         .boton {
             @extend %button-base;
@@ -90,7 +93,7 @@ body {
 
     h2 {
         background-color: $primary-color;
-        color: nth($lista-de-colores,2);
+        color: nth($lista-de-colores, 1);
         padding: 20px;
         text-align: center;
         text-transform: uppercase;
@@ -106,9 +109,9 @@ body {
         flex-wrap: wrap;
         div {
             @extend %button-base;
-            background-color: transparent;
+            background-color: transparent !important;
             color: $text-color;
-            border: 2px solid nth($lista-de-colores, 1);
+            border: 2px solid nth($lista-de-colores, 3) !important;
             border-radius: 10px;
             padding: 20px;
             text-align: center;
@@ -120,7 +123,7 @@ body {
             min-width: 250px;
             &:hover {
                 transform: scale(1.05);
-                box-shadow: 0 8px 16px color($lista-de-colores, 2) !important;
+                box-shadow: 0 8px 16px color $secundary-color !important;
             }
         }
         img {
@@ -163,7 +166,7 @@ body {
     text-align: center;
     h2 {
         background-color: $primary-color;
-        color: nth($lista-de-colores,2);
+        color: nth($lista-de-colores,1);
         margin-top: 0;
         padding: 20px;
         text-align: center;
@@ -173,6 +176,7 @@ body {
 }
 .contenedor-itemss {
     margin-top: 20px;
+    margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -184,7 +188,7 @@ body {
     background-color: transparent;
     color: $text-color;
     font-weight: bold;
-    border: 2px solid nth($lista-de-colores, 1);
+    border: 2px solid nth($lista-de-colores, 3);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -193,7 +197,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     &:hover {
         transform: scale(1.05);
-        box-shadow: 0 8px 16px color($lista-de-colores, 2);
+        box-shadow: 0 8px 16px color $secundary-color;
     }
     img {
         max-width: 100%;
@@ -231,7 +235,7 @@ h3 {
 .nosotros {
     h2 {
         background-color: $primary-color;
-        color: nth($lista-de-colores, 2);
+        color: nth($lista-de-colores, 1);
         padding: 20px;
         text-align: center;
         text-transform: uppercase;
@@ -248,7 +252,7 @@ h3 {
 .valores {
     h2 {
         background-color: $primary-color;
-        color: nth($lista-de-colores, 2);
+        color: nth($lista-de-colores, 1);
         padding: 20px;
         text-align: center;
         text-transform: uppercase;
@@ -275,7 +279,7 @@ h3 {
 .timeline {
     h2 {
         background-color: $primary-color;
-        color: nth($lista-de-colores, 2);
+        color: nth($lista-de-colores, 1);
         padding: 20px;
         text-align: center;
         text-transform: uppercase;
@@ -292,6 +296,7 @@ h3 {
         padding: 20px;
         border-left: 4px solid $primary-color;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
         h3 {
             color: $primary-color;
             margin-bottom: 10px;
@@ -306,16 +311,27 @@ h3 {
 // PAGINA "CONTACTO" //
 
 .contacto {
+    text-align: center;
+    }
     h2 {
         background-color: $primary-color;
-        color: nth($lista-de-colores, 2);
+        color: nth($lista-de-colores, 1);
         padding: 20px;
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 20px;
         font-weight: bold;
     }
-}
+    p, .contact-info {
+        color: $text-color;
+        font-size: 16px;
+        margin-bottom: 10px;
+        .highlight {
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+
 .formulario-contacto {
     form {
         display: flex;
@@ -348,26 +364,27 @@ h3 {
 // PAGINA "OPINIONES" //
 
 .testimonials {
-    padding: 0 40px 20px;
     text-align: center;
-    margin: 0;
     h2 {
         background-color: $primary-color;
-        color: nth($lista-de-colores, 2);
+        color: nth($lista-de-colores, 1);
         padding: 20px;
         text-transform: uppercase;
-        margin: 5px;
+        margin: 0;
         margin-bottom: 20px;
         font-weight: bold;
+        width: 100%;
     }
     .blockquote {
         padding: 20px;
+        margin: 10px;
         border-left: 5px solid $primary-color;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         margin-bottom: 30px;
     }
     p {
+        color: $text-color;
         font-style: italic;
         font-size: 1.3rem;
     }

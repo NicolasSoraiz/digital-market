@@ -1,8 +1,9 @@
 // VARIABLES //
 
-$primary-color: darkred;
-$text-color: whitesmoke;
-$hover-color: red;
+$primary-color: #D01C1F;
+$secundary-color: rgb (15, 18, 19);
+$text-color: #FAEBD7;
+$hover-color: #FF0000;
 
 // MIXINS //
 
@@ -33,4 +34,4 @@ $hover-color: red;
 
 // LISTAS //
 
-$lista-de-colores: red, black, white, darkred;
+$lista-de-colores: black, #FAEBD7, #D01C1F;
